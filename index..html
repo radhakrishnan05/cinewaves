@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Maintenance</title>
+    <style>
+        /* General Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #1e3c72, #2a5298);
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            animation: scroll 10s linear infinite;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        p {
+            font-size: 1.5em;
+        }
+
+        .date {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        /* Apple Scrolling Effect */
+        @keyframes scroll {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>We're Under Maintenance</h1>
+        <p>Our website will be back soon! Estimated reopening:</p>
+        <div class="date">18/12/2024</div>
+        <p>Thank you for your patience!</p>
+    </div>
+</body>
+</html>
